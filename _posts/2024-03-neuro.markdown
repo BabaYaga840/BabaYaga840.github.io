@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Generation using hopfield networks"
+date:   2024-03-18 18:08:39 +00:00
+image: /images/hop.jpg
+categories: KGP
+subtitle: "Hopfield network based sampling"
+---
+Looked into generation of latent variables using hopfield networks.
+Link to the <a href="pdf/hop_samp.pdf>report</a>
+
+Project proposal for the course: Neuronal Coding and Sensory Information
