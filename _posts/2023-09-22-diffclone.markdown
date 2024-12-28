@@ -3,7 +3,7 @@ layout: post
 title:  "TOTO : A Real Robot Learning Benchmark Challenge NeurIPS 2023"
 date:   2010-06-22 18:08:39 +00:00
 image: /images/gina-motes.jpg
-categories: UC
+categories: research
 course: "IIT Kharagpur"
 author: "Soumojit Bhattacharya"
 subtitle: "Diffusion based behavioural cloning"
