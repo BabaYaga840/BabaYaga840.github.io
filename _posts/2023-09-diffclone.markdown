@@ -3,7 +3,7 @@ layout: post
 title:  "TOTO : A Real Robot Learning Benchmark Challenge NeurIPS 2023"
 date:   2010-06-22 18:08:39 +00:00
 image: /images/gina-motes.jpg
-categories: KGP
+categories: research
 subtitle: "Diffusion based behavioural cloning"
 ---
 Developed DiffClone for solving robotic control task of pouring and scooping in an offline RL setup with a sparse reward structure.
