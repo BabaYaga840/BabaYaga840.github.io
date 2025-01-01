@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Skill-Based Communication for Multi-Agent Reinforcement Learning"
+date:   2024-11-20 09:30:00 +00:00
+image: /images/marl-BTP.png
+categories: KGP
+course: "IIT Kharagpur"
+author: "Soumojit Bhattacharya"
+subtitle: "Multi-Agent Reinforcement Learning (MARL) with Latent Skill Communication"
+excerpt: "Developed a skill-based communication framework for MARL to enhance coordination and scalability in partially observable environments."
+---
+My bachelor's thesis focuses on skill-based communication in multi-agent reinforcement learning (MARL) to address non-stationarity and partial observability.  
+
+The project introduces a novel framework where agents communicate through latent skill representations, reducing bandwidth while maintaining efficient coordination. The approach integrates an autoencoder to learn compact skill latents, enabling agents to synchronize their actions over extended time horizons.  
+
+Experiments conducted in the Multi-Agent Particle Environment (MPE) demonstrate that this method outperforms traditional MADDPG baselines, particularly in settings with limited visibility. The proposed system enhances communication efficiency and improves scalability for large multi-agent teams.  
+
+I carried out this work under the supervision of Prof. Aritra Hazra and Prof. Arijit De.  
