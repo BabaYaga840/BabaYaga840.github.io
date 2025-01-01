@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Student Satellite Program - Communication System Design"
+date:   2024-08-15 14:00:00 +00:00
+image: /images/satellite-comms.jpg
+categories: KGP
+course: "IIT Kharagpur"
+author: "Soumojit Bhattacharya"
+subtitle: "CubeSat Communication System for Ground Testing"
+excerpt: "Designed and tested CubeSat communication systems, overcoming obstacles such as trees and buildings to establish successful ground-based transmission."
+---
+As a founding member of the Student Satellite Program at IIT Kharagpur, I played a key role in designing and testing the CubeSat’s communication system.  
+
+The project involved setting up ground-to-ground communication between a transmitter and receiver placed at distant locations, separated by obstacles such as buildings and dense foliage. We utilized the LORA RFM95PW module with a spring antenna on the CubeSat and a Yagi antenna at the ground station.  
+
+Despite significant environmental obstructions, the system successfully established reliable communication, validating the antenna design and signal integrity. This work contributed to sensor integration and preliminary launch tests for higher-altitude trials.  
