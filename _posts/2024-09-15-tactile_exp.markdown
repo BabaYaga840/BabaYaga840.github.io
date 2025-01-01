@@ -2,7 +2,7 @@
 layout: post
 title:  "Blind Tactile Exploration for Surface Reconstruction"
 date:   2024-09-20 15:30:00 +00:00
-image: /images/tactile-sensing.jpg
+image: /images/tactile-sensing.png
 categories: research
 course: "IISc Bangalore"
 author: "Soumojit Bhattacharya"
