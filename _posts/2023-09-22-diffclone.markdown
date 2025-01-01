@@ -2,7 +2,7 @@
 layout: post
 title:  "TOTO : A Real Robot Learning Benchmark Challenge NeurIPS 2023"
 date:   2010-06-22 18:08:39 +00:00
-image: /images/gina-motes.jpg
+image: /images/diffclone.png
 categories: research
 course: "IIT Kharagpur"
 author: "Soumojit Bhattacharya"
