@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Scalable Multi-Agent Robot Swarm Navigation"
+date:   2024-12-10 10:45:00 +00:00
+image: /images/swarm-navigation.jpg
+categories: research
+course: "IIT Kharagpur"
+author: "Soumojit Bhattacharya"
+subtitle: "Reinforcement Learning for Multi-Agent Pathfinding"
+excerpt: "Developed an end-to-end pipeline for multi-agent pathfinding in dynamic environments using reinforcement learning techniques."
+---
+I developed an end-to-end navigation pipeline for multi-agent robot swarms operating in dynamic environments.  
+
+The project involved experimenting with various reinforcement learning algorithms for multi-agent pathfinding, addressing challenges such as collision avoidance and efficient task allocation. The implemented system demonstrated robust performance across different environments, showcasing scalability and adaptability for larger swarms.  
+
+Project Link: [Multi-Agent Swarm Navigation Pipeline](https://drive.google.com/file/d/1ypvKRjFOmykpRwqEISF64WSLNDvsXpy/view?usp=sharing)  
