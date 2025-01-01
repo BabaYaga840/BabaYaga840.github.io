@@ -3,7 +3,7 @@ layout: post
 title:  "Scalable Multi-Agent Robot Swarm Navigation"
 date:   2024-12-10 10:45:00 +00:00
 image: /images/swarm-navigation.jpg
-categories: research
+categories: KGP
 course: "IIT Kharagpur"
 author: "Soumojit Bhattacharya"
 subtitle: "Reinforcement Learning for Multi-Agent Pathfinding"
