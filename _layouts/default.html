@@ -1,40 +1,32 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-E00L9PT3V9');
-  </script>
-  <title>{{ site.name }}</title>
-
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-
-  <meta name="author" content="{{ site.name }}" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
+  <style>
+    .section-intro {
+      background-color: #d0e7ff;  /* Light Blue */
+      padding: 30px;
+    }
+    .section-research {
+      background-color: #f0f0f0;  /* Light Grey */
+      padding: 30px;
+    }
+    .section-projects {
+      background-color: #ffffff;  /* White */
+      padding: 30px;
+    }
+  </style>
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
-              <h1>
-                Soumojit Bhattacharya
-              </h1>
-              <p>
+  <div class="section-intro">
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:60%;vertical-align:middle">
+                <h1>
+                  Soumojit Bhattacharya
+                </h1>
+                <p>
     I am a student at the <a href="https://www.iitkgp.ac.in/">Indian Institute of Technology Kharagpur</a>, pursuing a B.Tech. in Electronics and Electrical Communication Engineering. My passion lies in robotics, with a strong interest in reinforcement learning, autonomous systems, and multi-agent collaboration. I actively engage in research to explore these domains further.
 </p>
 <p>
@@ -52,25 +44,22 @@
 <p>
     Driven by a vision of a future where robots seamlessly integrate into society, I aim to contribute to the development of intelligent systems that enhance universal well-being. I want to see robots addressing critical challenges in healthcare, disaster response, and autonomous navigation, while also taking on dangerous and repetitive tasks to free humanity for more creative and fulfilling pursuits. My goal is to conduct impactful robotics research that brings us closer to this vision, focusing on adaptable and collaborative robotic agents.
 </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <img style="width:100%;max-width:100%" alt="profile photo" src="images/photo.jpeg">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
 
-              
-              <p style="text-align:center">
-                <a href="mailto:soumojit048@kgpian.iitkgp.ac.in">Email</a> &nbsp;/&nbsp;
-                <a href="https://github.com/BabaYaga840">GitHub</a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/soumojit-bhattacharya-49575b1b0/"> LinkedIn </a> &nbsp;/&nbsp;
-                <a href="grad_CV.pdf">CV</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/photo.jpeg">
-            </td>
-          </tr>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
+  <div class="section-research">
+    <table style="width:100%;">
+      <tr>
+        <td style="padding:2.5%;width:100%;vertical-align:middle">
+          <h2>Research</h2>
 <p>
     My research focuses on reinforcement learning, multi-agent systems, and robotic manipulation. I am particularly interested in developing robust learning algorithms that enable robots to adapt and collaborate in dynamic environments.  
 </p>
@@ -79,143 +68,55 @@
 </p>
 <p>
     In the past, I have worked on enhancing robotic perception and decision-making by integrating sensor fusion, adaptive policies, and efficient point cloud processing techniques. This includes contributions to path planning, SLAM projects, and CubeSat development.
-</p>
+</p>        </td>
+      </tr>
+    </table>
 
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <table style="width:100%;">
+      {% for post in site.posts %}
+      {% for cat in post.categories %}
+      {% if cat == 'research' %}
+      <tr>
+        <td style="padding:2.5%;width:25%;vertical-align:middle;">
+          <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+        </td>
+        <td style="padding:2.5%;width:75%;vertical-align:middle">
+          <h3>{{post.title}}</h3>
+          <p>{{ post.excerpt }}</p>
+        </td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </table>
+  </div>
 
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
+  <div class="section-projects">
+    <table style="width:100%;">
+      <tr>
+        <td style="padding:2.5%;width:100%;">
+          <h2>Other Projects</h2>
+          <p>These include coursework, side projects, and unpublished research work.</p>
+        </td>
+      </tr>
+    </table>
 
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
-        
-        <br>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Other Projects</h2>
-              <p> These include coursework, side projects and unpublished research work. 
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat != 'research' and cat != 'Intel' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+    <table style="width:100%;">
+      {% for post in site.posts %}
+      {% for cat in post.categories %}
+      {% if cat != 'research' and cat != 'Intel' %}
+      <tr>
+        <td style="padding:2.5%;width:25%;vertical-align:middle;">
+          <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+        </td>
+        <td style="padding:2.5%;width:75%;vertical-align:middle">
+          <h3>{{post.title}}</h3>
+          <p>{{ post.excerpt }}</p>
+        </td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </table>
+  </div>
 </body>
-
-</html>
-
