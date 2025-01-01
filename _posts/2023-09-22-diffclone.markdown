@@ -7,7 +7,7 @@ categories: research
 course: "IIT Kharagpur"
 author: "Soumojit Bhattacharya"
 subtitle: "Diffusion based behavioural cloning"
-excerpt: "Developed DiffClone for offline RL tasks involving pouring and scooping with sparse rewards."
+excerpt: "Developed DiffClone for offline RL tasks involving pouring and scooping with sparse rewards. [arXiv](https://arxiv.org/abs/2401.09243)"
 ---
 I developed DiffClone to solve robotic control tasks like pouring and scooping in an offline RL setup with sparse reward structures.  
 
