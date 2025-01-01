@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TOTO : A Real Robot Learning Benchmark Challenge NeurIPS 2023"
+title:  "DiffClone: Enhanced Behaviour Cloning in Robotics with Diffusion-Driven Policy Learning"
 date:   2010-06-22 18:08:39 +00:00
 image: /images/diffclone.png
 categories: research
