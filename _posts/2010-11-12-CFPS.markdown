@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Curvature Informed Furthest Point Sampling"
+date:   2024-11-25 12:00:00 +00:00
+image: /images/curvature-fps.jpg
+categories: research
+course: "IIT Kharagpur"
+author: "Soumojit Bhattacharya"
+subtitle: "Reinforcement Learning for Point Cloud Downsampling"
+excerpt: "Proposed CFPS, a curvature-informed point cloud sampling method using reinforcement learning to optimize point selection."
+---
+I contributed to the development of Curvature Informed Furthest Point Sampling (CFPS), which integrates curvature information into traditional furthest point sampling to enhance point cloud downsampling.  
+
+Our method leverages reinforcement learning to optimize point selection by prioritizing high-curvature regions, preserving local shape details crucial for tasks such as 3D reconstruction and object recognition. CFPS reduces Chamfer-L1 distance by 22% and improves Hausdorff distance by 15% compared to baseline FPS methods.  
+
+This work has been submitted to CVPR 2025 and demonstrates state-of-the-art results in point cloud classification and segmentation tasks.  
+Paper Link: [Curvature Informed Furthest Point Sampling (arXiv)](https://arxiv.org/html/2411.16995v1)  
+
