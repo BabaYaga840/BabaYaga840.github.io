@@ -10,7 +10,7 @@ subtitle: "Surface Reconstruction using Tactile Sensing and Reinforcement Learni
 excerpt: "Developed a tactile exploration algorithm for reconstructing fine surface details of objects using a sequential controller-based approach. First-author paper submitted to ICRA 2025"
 subtitle: "Blind Tactile Exploration for Surface Reconstruction"
 venue: "ICRA 2025(submitted)"
-authors: "Yashaswi Sinha*, <strong>Soumojit Bhattacharya*<\strong>, Yash Kumar Sahu and Pradipta Biswas"
+authors: "Yashaswi Sinha*, <strong>Soumojit Bhattacharya*</strong>, Yash Kumar Sahu and Pradipta Biswas"
 ---
 As part of my internship at IISc Bangalore, I developed a reinforcement learning pipeline for blind tactile exploration aimed at surface reconstruction tasks.  
 
